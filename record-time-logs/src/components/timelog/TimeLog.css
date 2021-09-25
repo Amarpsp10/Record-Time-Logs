@@ -1,0 +1,35 @@
+.timelog {
+  width: 100%;
+  max-width: 800px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgb(108, 108, 255);
+  cursor: pointer;
+  padding: 10px;
+  margin-block: 5px;
+}
+.timelog:hover {
+  background-color: #e2e2e2;
+}
+.title {
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 22px;
+}
+.delete-icon {
+  padding: 5px;
+  border-radius: 50%;
+}
+.delete-icon:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.delete-icon:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.date-times {
+  color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 10px;
+}
