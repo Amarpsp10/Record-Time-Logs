@@ -16,9 +16,6 @@ export default function Header() {
              <Button onClick={()=>showModal()} variant="outlined" endIcon={<AddIcon />}>
                  Add Time Log
             </Button>
-            <Button variant="outlined" endIcon={<AddIcon />}>
-                 Add Time Log
-            </Button>
             <AddModal open={open} setOpen={setOpen}/>
         </div>
     )

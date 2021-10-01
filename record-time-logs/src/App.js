@@ -1,16 +1,18 @@
 import { AuthProvider } from './context/AuthContext';
-
-import AuthPage from './pages/AuthPage'
-import Navigation from './components/navigation/Navigation'
+import {BrowserRouter as Router , Switch, Route} from 'react-router-dom'
+import Login from './pages/AuthPage/LoginPage'
 import Home from './pages/HomePage/Home';
 
 function App() {
   return (
+    <Router>
       <AuthProvider>
-         <Navigation/>
-         <Home/>
-         <AuthPage/>
+         <Switch>
+          <Route path='/'  component={Home} exact/>
+          <Route path='/login' component={Login} exact/>
+        </Switch>
       </AuthProvider>
+    </Router>
   );
 }
 
